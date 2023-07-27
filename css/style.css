@@ -1,0 +1,378 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: aliceblue;
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+header {
+    background-image: url(../img/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+nav {
+    z-index: 51230;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+header .layer {
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+header h3::after {
+    content: "|";
+    animation-name: typing;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.about img {
+    border-radius: 10%;
+}
+
+@keyframes typing {
+    0% {
+        content: "D|";
+    }
+
+    2%{
+        content: "De|";
+    }
+
+    4% {
+        content: "Dev|";
+    }
+
+    6% {
+        content: "Deve|";
+    }
+
+    8% {
+        content: "Devel|";
+    }
+
+    10% {
+        content: "Develo|";
+    }
+
+    12% {
+        content: "Develop|";
+    }
+
+    14% {
+        content: "Develope|";
+    }
+
+    16% {
+        content: "Developer|";
+    }
+
+    18% {
+        content: "Develope|";
+    }
+
+    20% {
+        content: "Develop|";
+    }
+
+    22% {
+        content: "Develo|";
+    }
+
+    24% {
+        content: "Devel|";
+    }
+
+    26% {
+        content: "Deve|";
+    }
+
+    28% {
+        content: "Dev|";
+    }
+
+    30% {
+        content: "De|";
+    }
+
+    32% {
+        content: "D|";
+    }
+
+    36% {
+        content: "|";
+    }
+
+    38% {
+        content: "D|";
+    }
+
+    40% {
+        content: "De|";
+    }
+
+    42% {
+        content: "Des|";
+    }
+
+    44% {
+        content: "Desi|";
+    }
+
+    46% {
+        content: "Desig|";
+    }
+
+    48% {
+        content: "Design|";
+    }
+
+    50% {
+        content: "Designe|";
+    }
+
+    52% {
+        content: "Designer|";
+    }
+
+    54% {
+        content: "Designe|";
+    }
+
+    56% {
+        content: "Design|";
+    }
+
+    58% {
+        content: "Desig|";
+    }
+
+    60% {
+        content: "Desi|";
+    }
+
+    62% {
+        content: "Des|";
+    }
+
+    64% {
+        content: "De|";
+    }
+
+    66% {
+        content: "D|";
+    }
+
+    68% {
+        content: "|";
+    }
+    70%{
+        content:"P|";
+    }
+    72%{
+        content:"Ph|";
+    }
+    74%{
+        content:"Pho|";
+    }
+    76%{
+        content:"Phot|";
+    }
+    78%{
+        content:"Photo|";
+    }
+    80%{
+        content:"Photog|";
+    }
+    82%{
+        content:"Photogr|";
+    }
+    84%{
+        content:"Photogra|";
+    }
+    86%{
+        content:"Photograph|";
+    }
+    88%{
+        content:"Photographer|";
+    }
+    90%{
+        content:"Photograph|";
+    }
+    92%{
+        content:"Photogra|";
+    }
+    94%{
+        content:"Photog|";
+    }
+    96%{
+        content:"Phot|";
+    }
+    98%{
+        content:"Ph|";
+    }
+    100%{
+        content:"|";
+    }
+}
+
+.about h2 {
+    position: relative;
+}
+
+.about h2::after {
+    content: '';
+    width: 20%;
+    height: 4px;
+    background-color: #007aff;
+    position: absolute;
+    left: 0;
+    top: 110%;
+}
+
+.line {
+    position: relative;
+}
+
+.line::after {
+    content: '';
+    width: 5%;
+    height: 8px;
+    background-color: #007aff;
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%);
+}
+
+.ico-sercle {
+    box-shadow: 0 0 0 10px #0078ff;
+    border-radius: 50%;
+    padding: 35px;
+    color: #000;
+    transition: all 0.8s;
+}
+
+.services-hover {
+    border-radius: 5%;
+}
+
+.services-hover:hover .ico-sercle {
+
+    box-shadow: 0 0 0 10px #cde1f8;
+    background-color: rgb(0, 122, 255);
+    color: #fff;
+}
+
+.visitor {
+    height: 50vh;
+    background-image: url(../img/counters-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.visitor-layer {
+    background-color: rgba(0, 120, 255, 0.7)
+}
+
+.ico-visitor {
+    box-shadow: 0 0 0 10px #cde1f8;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+img {
+    transition: transform 1s;
+}
+
+.potfolio:hover img {
+    transform: scale(1.2);
+}
+
+.carocel-item {
+    background-image: url(../img/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carocel-item h3
+{
+    letter-spacing: 1px;
+}
+.layer-blog
+{
+    position: absolute;
+    bottom: 90%;
+    left: 50%;
+    padding: 5px;
+    transform: translate(-50%);
+    background-color: #0062d3;
+    color: #fff;
+    font-weight: 600;
+    border-radius:5% ;
+}
+.layer-carosel {
+    background-color: rgba(0, 120, 255, 0.7);
+}
+
+.blog a , .blog div a h4 {
+    color: #000;
+    transition: color 0.7s;
+}
+
+.blog a:hover , .blog div a h4:hover {
+    color: #0078ff;
+}
+
+.blog span {
+    font-size: 15px;
+}
+
+.contact {
+    height: 100vh;
+    background-image: url(../img/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-layer {
+    background-color: rgba(0, 120, 255, 0.7);
+}
+
+.contact-ico {
+    padding: 10px;
+    box-shadow: 0 0 0 5px #0078ff;
+    border-radius: 50%;
+}
+
+.contact-ico:hover {
+    background-color: #0078ff;
+    color: #fff;
+    box-shadow: 0 0 0 5px #cde1f8;
+}
+
+footer {
+    background-color: #0062d3;
+}
